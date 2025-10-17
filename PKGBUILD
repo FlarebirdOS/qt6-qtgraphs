@@ -1,6 +1,6 @@
 pkgname=qt6-qtgraphs
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Qt Graphs for data visualization"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -24,7 +24,7 @@ makedepends=(
     'qt6-qtshadertools'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(f3aa78ec45df2c42f9a8cee906d20e528897c3edff5b3f81281f28ab9818082b)
+sha256sums=(02f98c3de090f98ff535cce296fc91bc7c679a2411aefda49bda1dc3d137302a)
 
 build() {
     cd ${pkgname#*-}
